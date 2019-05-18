@@ -1,0 +1,71 @@
+.thanos_root {
+	border: 1px solid green;
+	min-height: 100vh;
+}
+.thanos_root, .thanos_top, .thanos_finger_middle_cont, .thanos_finger_middle {
+	display: flex;
+}
+.thanos_root, .thanos_finger_middle_cont {
+	align-items: flex-end;
+}
+.thanos_inner {
+	width: calc(100% - 60%);
+	margin: 0 auto;
+	min-width: 15rem;
+	max-width: 15rem;
+}
+.thanos {
+	background: orange;
+	height: 12rem;
+}
+.thanos_top, .thanos_finger_middle_cont, .thanos_middle{
+	position: relative;
+}
+.thanos_finger_index, .thanos_finger_middle, .thanos_finger_thumb {
+	position: absolute;
+}
+.thanos_top {
+	transform: rotateZ(10deg) translate(14%, 0);
+	background: white;
+}
+.thanos_middle {
+	transform: rotateZ(10deg);
+}
+.thanos_bottom {
+	transform: translate(-5%, -14%);
+}
+.thanos_finger_middle_cont {
+	width: 100%;
+	height: 100%;
+}
+.thanos_finger_middle {
+	border: 1px solid orange;
+	width: 150%;
+	height: 35%;
+	bottom: 0;
+	right: 0;
+	transform: translate(1%, -52%) rotateZ(10deg);
+}
+.thanos_finger_index {
+	border: 1px solid orange;
+	left: 0;
+	bottom: 0;
+	height: 120%;
+	width: 30%;
+}
+.thanos_finger_thumb {
+	right: 100%;
+	bottom: -6%;
+	border: 1px solid orange;
+	width: 35%;
+	height: 150%;
+	transform: rotateZ(-35deg);
+}
+.thannos_finger_thumb_inner, .thannos_finger_middle_inner, .thannos_finger_index_inner {
+	border: 1px solid brown;
+	height: calc(100% / 4);
+}
+.thannos_finger_middle_inner {
+	height: 100%;
+	width: calc(100% / 4);
+}

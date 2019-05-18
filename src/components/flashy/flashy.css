@@ -1,0 +1,23 @@
+.flashy_on {
+	position: absolute;
+	width: 100%;
+	min-height: 100vh;
+	background: #ffffff;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+}
+
+.flashy_off {
+	animation: flashy 3s linear forwards;
+}
+
+@keyframes flashy {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		display: none;
+	}
+}
