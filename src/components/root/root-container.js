@@ -12,7 +12,6 @@ class Root extends React.Component {
 	render() {
 		return (
 			<section className="root">
-				
 				<Header />
 				<Parallax src={Woods}/>
 				<About />

@@ -6,8 +6,10 @@ class AboutCard extends React.Component {
 		return (
 			<section className="about_card">
 				<img className="about_card__img" src={this.props.src} alt={this.props.desc} />
-				<h2>{this.props.title}</h2>
-				<p>{this.props.children}</p>
+				<section className="about_card_envelope">
+					<h2 className="about_card__tittle">{this.props.title}</h2>
+					<p className="about_card__desc">{this.props.children}</p>
+				</section>
 			</section>
 		) 
 	}

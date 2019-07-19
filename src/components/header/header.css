@@ -1,3 +1,6 @@
 .header {
 	min-height: calc(100vh / 2);
 }
+.video_player {
+	width: 100%;
+}
