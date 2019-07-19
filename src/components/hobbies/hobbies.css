@@ -1,0 +1,6 @@
+.hobby {
+	height: calc(30rem * 3);
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+}

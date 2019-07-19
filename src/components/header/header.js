@@ -1,12 +1,11 @@
 import React from 'react';
-import HeaderImg from './header-img';
 import './header.css';
 
 class Header extends React.Component {
 	render() {
 		return (
-			<header>
-				<HeaderImg />
+			<header className="header">
+				<h1>3D JS here</h1>
 			</header>
 		);
 	}

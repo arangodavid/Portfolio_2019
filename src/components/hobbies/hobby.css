@@ -1,0 +1,56 @@
+.rectangle_cont {
+	perspective: 40rem;
+}
+.rectangle {
+	transform-style: preserve-3d;
+	width: 10rem;
+	height: 22rem;
+	margin: 0 auto;
+	transform: rotateY(-15deg);
+	position: relative;
+}
+.face {
+	position: absolute;
+	width: 10rem;
+	height: 20rem;
+	background: #ffffff;
+	border: 2px solid green;
+	opacity: .5;
+/*	transition: transform 1s ease-in-out;*/
+	animation: fadeIn 1s linear 1s forwards;
+}
+.front {
+	transform: translateZ(5rem);
+}
+.left {
+	transform: rotateY(-90deg) translateZ(5rem);
+}
+.right {
+	transform: rotateY(90deg) translateZ(5rem);
+}
+.back {
+	transform: rotateX(180deg) translateZ(5rem);
+}
+/*.rectangle:hover .front {
+	transform: translateZ(5rem);
+}
+.rectangle:hover .left {
+	transform: rotateY(-90deg) translateZ(5rem);
+}
+.rectangle:hover .right {
+	transform: rotateY(90deg) translateZ(5rem);
+}
+.rectangle:hover .back {
+	transform: rotateX(180deg) translateZ(5rem);
+}
+.rectangle:hover .rectangle:hover {
+	transform: rotateY(90deg);
+}*/
+@keyframes fadeIn {
+	from {
+		opacity: .5;
+	}
+	to {
+		opacity: 1;
+	}
+}

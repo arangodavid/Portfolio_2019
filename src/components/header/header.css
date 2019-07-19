@@ -1,9 +1,3 @@
-.headerImg {
-	border: 1px solid green;
-}
-.headerImgCont {
-	height: 30rem;
-	width: 20%;
-	background: url('./assets/racoon.png') no-repeat;
-	background-size: contain;
+.header {
+	min-height: calc(100vh / 2);
 }

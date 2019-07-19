@@ -1,4 +1,7 @@
 /*GLOBAL STYLES*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 html {
 	font-size: 15px;
 }
