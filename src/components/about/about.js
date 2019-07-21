@@ -6,7 +6,7 @@ import Programmer from '../../assets/programmer.jpg';
 class About extends React.Component {
 	render() {
 		return (
-			<section className="about">
+			<section className="about_cont">
 				<h1>ABOUT</h1>
 				<AboutCard 
 				title="Who Am I" 

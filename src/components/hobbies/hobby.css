@@ -1,5 +1,6 @@
 .rectangle_cont {
 	perspective: 40rem;
+	margin: 10% 0;
 }
 .rectangle {
 	transform-style: preserve-3d;
@@ -8,13 +9,12 @@
 	margin: 0 auto;
 	transform: rotateY(-15deg);
 	position: relative;
+	color: #ffffff;
 }
 .face {
 	position: absolute;
 	width: 10rem;
 	height: 20rem;
-	background: #ffffff;
-	border: 2px solid green;
 	opacity: .5;
 /*	transition: transform 1s ease-in-out;*/
 	animation: fadeIn 1s linear 1s forwards;
@@ -31,6 +31,52 @@
 .back {
 	transform: rotateX(180deg) translateZ(5rem);
 }
+.bottom {
+	height: 10rem;
+	transform: rotateX(-90deg) translateZ(16rem);
+	background: #000000;
+	opacity: .5;
+}
+@keyframes fadeIn {
+	from {
+		opacity: .5;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.front, .right, .rectangle_logo__cont {
+	display: flex;
+} 
+
+.front, .right {
+	flex-flow: row wrap;
+}
+
+.rectangle_logo__cont {
+	border: .6rem double #ffffff;
+	margin: 10% auto;
+	height: 5rem;
+	width: 5rem;
+	align-items: center;
+}
+.rectangle_logo__cont, .rectangle_logo {
+	border-radius: 360%;
+}
+
+.rectangle_logo {
+	height: 35%;
+}
+.rectangle_title {
+	width: 100%;
+}
+.rectangle_title,
+.rectangle_desc {
+	text-shadow: .05rem .05rem 0 #000000;
+}
+.rectangle_desc {
+	padding: 0 1rem;
+}
 /*.rectangle:hover .front {
 	transform: translateZ(5rem);
 }
@@ -46,11 +92,64 @@
 .rectangle:hover .rectangle:hover {
 	transform: rotateY(90deg);
 }*/
-@keyframes fadeIn {
-	from {
-		opacity: .5;
+.rectangle_footer {
+	align-self: flex-end;
+	width: 10rem;
+	height: 6rem;
+	position: relative;
+	overflow: hidden;
+}
+.rectangle_footer__img {
+	margin: 0;
+	height: 100%;
+	width: 1000%;
+	position: absolute;
+	bottom: 0;
+	animation: slide 120s linear infinite;
+}
+@keyframes slide{
+	0% {
+		transform: translate(0, 0);
 	}
-	to {
-		opacity: 1;
+	50% {
+		transform: translate(-50%, 0);
+	}
+	100% {
+		transform: translate(0%, 0);
+	}
+}
+@media screen and (min-width: 750px) {
+	.rectangle_cont {
+		width: calc(100% / 3);
+	}
+}
+@media screen and (min-width: 1150px) {
+	.rectangle {
+		transform: rotateY(-25deg);
+		height: 32rem;
+	}
+	.face {
+		width: 15rem;
+		height: 30rem;
+	}
+	.front {
+		transform: translateZ(7.5rem);
+	}
+	.left {
+		transform: rotateY(-90deg) translateZ(7.5rem);
+	}
+	.right {
+		transform: rotateY(90deg) translateZ(7.5rem);
+	}
+	.back {
+		transform: rotateX(180deg) translateZ(7.5rem);
+	}
+	.bottom {
+		height: 15rem;
+		transform: rotateX(-90deg) translateZ(25rem);
+	}
+	.rectangle_footer {
+		width: 15rem;
+		height: 10rem;
 	}
 }

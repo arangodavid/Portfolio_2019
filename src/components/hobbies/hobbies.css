@@ -1,6 +1,11 @@
 .hobby {
-	height: calc(30rem * 3);
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-around;
+}
+@media screen and (min-width: 750px) {
+	.hobby {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
 }

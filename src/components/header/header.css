@@ -1,6 +1,4 @@
-.header {
-	min-height: calc(100vh / 2);
-}
-.video_player {
-	width: 100%;
+.header_cont {
+	border: 1px solid black;
+	min-height: 30rem;
 }
