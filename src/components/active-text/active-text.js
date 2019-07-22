@@ -5,53 +5,79 @@ class ActiveText extends React.Component {
 	constructor(props) {
 		super(props);
 		this.phrases = this.props.phrases;
-		this.state = {phrase: ''};
-		this.test = 'programmer';
+		this.state = {phrase: '', phraseCount: 0};
 	}
-
-	removePhrase(phrases, i) {
+	nextPhrase() {
+		if(this.state.phraseCount >= this.phrases.length - 1) {
+			this.setState({phraseCount: 0});
+			this.start(this.phrases[this.state.phraseCount]);
+		}else {
+			this.setState({phraseCount: this.state.phraseCount + 1});
+			this.start(this.phrases[this.state.phraseCount]);
+		}
+	}
+	removePhrase(phrase, i) {
 		setTimeout(() => {
-			let phrase = phrases.substring(0, this.state.phrase.length - 1);
-			this.setState({phrase: phrase});			
-		}, 250 * i);
-	}
+			let updatedPhrase = phrase.substring(0, this.state.phrase.length - 1);
+			this.setState({phrase: updatedPhrase});
 
-	checkPhrase(phrases) {
-		if(phrases.length === this.state.phrase.length) {
-			console.log('done');
+			if(this.state.phrase.length === 0) {
+				console.log('Phrase Removed');
+				setTimeout(() => {
+					this.nextPhrase();
+				}, 2000);
+			}		
+		}, 150 * i);
+	}
+	checkPhrase(phrase) {
+		if(phrase.length === this.state.phrase.length) {
+			console.log('Phrase Added');
 			setTimeout(() => {
-				for(let i = 0; i < phrases.length; i++) {
-					this.removePhrase(phrases, i);
+				for(let i = 0; i < phrase.length; i++) {
+					this.removePhrase(phrase, i);
 				}
-			}, 2000)
+			}, 1500)
 		}
 	}
-
-	setPhrase(phrases, i) {
+	setPhrase(phrase, i) {
 		setTimeout(() => {
-			let current = phrases.charAt(i);
+			let current = phrase.charAt(i);
 			this.setState({phrase: this.state.phrase + current});
-			this.checkPhrase(phrases);
-		}, 250 * i);					
+			this.checkPhrase(phrase);
+		}, 150 * i);					
 	}
-
-	start(phrases) {
-		for(let i = 0; i < phrases.length; i++) {
-			this.setPhrase(phrases, i);
+	start(phrase) {
+		for(let i = 0; i < phrase.length; i++) {
+			this.setPhrase(phrase, i);
 		}
 	}
-
 	componentDidMount() {
-		this.start(this.phrases);
+		this.start(this.phrases[this.state.phraseCount]);
 	}
 
 	render() {
 		return (
-			<section>
-				<p>{this.props.children} <span>{this.state.phrase}</span><span style={{color: 'red'}}>|</span></p>
+			<section className="active_text">
+					<section className="active_text__welcome">{this.props.children[0]}</section>
+					<section className="active_text__name">{this.props.children[1]}</section>
+					<section className="active_text__phrases__cont">
+						<span className="active_text__pre_phrases">I am a </span>
+						<span className="active_text__phrases">{this.state.phrase}
+							<span className="active_text__indicator">|</span>
+						</span>
+					</section>
 			</section>
 		)
 	}
 }
 
 export default ActiveText;
+
+
+
+
+
+
+
+
+
