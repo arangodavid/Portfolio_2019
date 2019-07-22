@@ -1,9 +1,5 @@
 .active_text {
-	border: 1px solid black;
 	color: #ffffff;
-	width: 100%;
-}
-.active_text__welcome {
 }
 .active_text__welcome p {
 	text-align: left;
@@ -12,7 +8,7 @@
 .active_text__welcome p {
 	margin: 0;
 }
-.active_text__name {
+.active_text__name h1{
 	font-size: 2.5rem;
 }
 .active_text__phrases__cont {
@@ -28,7 +24,51 @@
 .active_text__phrases {
 	width: 40%;
 	text-align: left;
+	color: #26de81;
+	font-weight: bold;
 }
 .active_text__indicator {
 	color: #eb3b5a;
+	font-weight: bold;
+}
+@media screen and (min-width: 450px) {
+	.active_text {
+		width: 80%;
+	}
+	.active_text__welcome p,
+	.active_text__phrases__cont {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (min-width: 650px) {
+	.active_text__name h1{
+		font-size: 3rem;
+	}
+	
+}
+@media screen and (min-width: 750px) {
+	.active_text {
+		width: 70%;
+	}
+	.active_text__welcome p,
+	.active_text__phrases__cont {
+		font-size: 1.3rem;
+	}
+	.active_text__name h1{
+		font-size: 3.5rem;
+	}
+	
+}
+@media screen and (min-width: 950px) {
+	.active_text {
+		min-width: 42rem;
+		max-width: 45rem;
+	}
+	.active_text__welcome p,
+	.active_text__phrases__cont {
+		font-size: 1.4rem;
+	}
+	.active_text__name h1{
+		font-size: 4rem;
+	}
 }

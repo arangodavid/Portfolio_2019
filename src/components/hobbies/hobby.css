@@ -10,6 +10,10 @@
 	transform: rotateY(-15deg);
 	position: relative;
 	color: #ffffff;
+	transition: transform .3s linear;
+}
+.rectangle:hover {
+	transform: rotateY(-90deg);
 }
 .face {
 	position: absolute;
@@ -48,11 +52,9 @@
 .front, .right, .rectangle_logo__cont {
 	display: flex;
 } 
-
 .front, .right {
 	flex-flow: row wrap;
 }
-
 .rectangle_logo__cont {
 	border: .6rem double #ffffff;
 	margin: 10% auto;
@@ -63,7 +65,6 @@
 .rectangle_logo__cont, .rectangle_logo {
 	border-radius: 360%;
 }
-
 .rectangle_logo {
 	height: 35%;
 }

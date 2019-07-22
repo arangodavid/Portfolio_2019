@@ -2,4 +2,7 @@
 	border: 1px solid black;
 	min-height: 30rem;
 	background: #338cb2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
