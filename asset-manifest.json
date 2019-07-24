@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Portfolio_2019/static/css/main.67aac08d.chunk.css",
+    "main.js": "/Portfolio_2019/static/js/main.82571a82.chunk.js",
+    "main.js.map": "/Portfolio_2019/static/js/main.82571a82.chunk.js.map",
+    "runtime~main.js": "/Portfolio_2019/static/js/runtime~main.7afb1bb9.js",
+    "runtime~main.js.map": "/Portfolio_2019/static/js/runtime~main.7afb1bb9.js.map",
+    "static/js/2.424c27cb.chunk.js": "/Portfolio_2019/static/js/2.424c27cb.chunk.js",
+    "static/js/2.424c27cb.chunk.js.map": "/Portfolio_2019/static/js/2.424c27cb.chunk.js.map",
+    "index.html": "/Portfolio_2019/index.html",
+    "precache-manifest.c78d6ec09f48f96608f605984a2d7da3.js": "/Portfolio_2019/precache-manifest.c78d6ec09f48f96608f605984a2d7da3.js",
+    "service-worker.js": "/Portfolio_2019/service-worker.js",
+    "static/css/main.67aac08d.chunk.css.map": "/Portfolio_2019/static/css/main.67aac08d.chunk.css.map",
+    "static/media/car-seven.jpg": "/Portfolio_2019/static/media/car-seven.bd07b24f.jpg",
+    "static/media/car.svg": "/Portfolio_2019/static/media/car.c39b38ff.svg",
+    "static/media/mountains.jpg": "/Portfolio_2019/static/media/mountains.f107cd54.jpg",
+    "static/media/programmer.jpg": "/Portfolio_2019/static/media/programmer.8c181c2b.jpg",
+    "static/media/snowboarding-three.svg": "/Portfolio_2019/static/media/snowboarding-three.d609bb10.svg",
+    "static/media/tree-two.jpg": "/Portfolio_2019/static/media/tree-two.ef6a9dd6.jpg",
+    "static/media/tree.svg": "/Portfolio_2019/static/media/tree.a8341aad.svg",
+    "static/media/woods.jpg": "/Portfolio_2019/static/media/woods.3001be5b.jpg"
+  }
+}
