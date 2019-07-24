@@ -6,12 +6,12 @@ class Hobby extends React.Component {
 		super(props);
 		this.bgColor = {
 			background: this.props.bgColor
-		}
+		};
 		this.footerImg = {
 			background: `url(${this.props.footerImg}) repeat-x`,
 			backgroundPosition: "center",
 			backgroundSize: "contain"
-		}
+		};
 	}
 	render() {
 		return (

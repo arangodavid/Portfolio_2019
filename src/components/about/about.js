@@ -4,6 +4,23 @@ import AboutCard from './about-card';
 import Programmer from '../../assets/programmer.jpg';
 
 class About extends React.Component {
+	animate() {
+		let envelopes = document.querySelectorAll('.about_card__img');
+		for(let envelope of envelopes) {
+			envelope.className += " envelope-isActive";
+			envelope.style.animationDelay = Math.floor(Math.random() * 6) + "s";
+		}
+	}
+
+	checkViewport() {
+		let winSize = window.matchMedia('(max-width: 800px)');
+		if(winSize.matches) this.animate();
+	}
+
+
+	componentDidMount() {
+		this.checkViewport();
+	}
 	render() {
 		return (
 			<section className="about_cont">

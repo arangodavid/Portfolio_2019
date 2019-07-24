@@ -9,6 +9,22 @@ import Trees from '../../assets/tree-two.jpg';
 import Mustang from '../../assets/car-seven.jpg';
 
 class Hobbies extends React.Component {
+	animate() {
+		let rectangles = document.querySelectorAll('.rectangle');
+		for(let rect of rectangles) {
+			rect.className += " rectangle-isActive";
+			rect.style.animationDelay = Math.floor(Math.random() * 6) + "s";
+		}
+		
+	}
+	checkViewport() {
+		const winSize = window.matchMedia('(max-width: 800px)');
+		if(winSize.matches) this.animate();
+	}
+
+	componentDidMount() {
+		this.checkViewport();
+	}
 	render() {
 		return (
 			<section>

@@ -17,12 +17,12 @@
 	justify-content: flex-end;
 }
 .active_text__pre_phrases {
-	width: 60%;
+	width: 50%;
 	text-align: right;
 	padding: 0 .3rem 0 0;
 }
 .active_text__phrases {
-	width: 40%;
+	width: 50%;
 	text-align: left;
 	color: #26de81;
 	font-weight: bold;
