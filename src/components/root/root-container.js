@@ -6,7 +6,6 @@ import Hobbies from '../hobbies/hobbies';
 import Footer from '../footer/footer';
 import Parallax from '../parallax/parallax';
 import Woods from '../../assets/woods.jpg';
-import './root.css';
 
 class Root extends React.Component {
 	render() {

@@ -1,5 +1,4 @@
 import React from 'react';
-import './parallax.css';
 
 class Parallax extends React.Component {
 	constructor(props) {

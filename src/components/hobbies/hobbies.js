@@ -1,5 +1,4 @@
 import React from 'react';
-import './hobbies.css';
 import Hobby from './hobby';
 import Snowboarding from '../../assets/snowboarding-three.svg';
 import Nature from '../../assets/tree.svg';
@@ -29,7 +28,7 @@ class Hobbies extends React.Component {
 		return (
 			<section>
 				<h1>HOBBIES</h1>
-				<section className="hobby">
+				<section className="hobbies">
 					<Hobby 
 					bgColor="#338CB2" 
 					logo={Snowboarding} 

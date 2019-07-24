@@ -1,5 +1,4 @@
 import React from 'react';
-import './hobby.css';
 
 class Hobby extends React.Component {
 	constructor(props) {

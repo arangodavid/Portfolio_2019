@@ -1,5 +1,4 @@
 import React from 'react';
-import './about.css';
 import AboutCard from './about-card';
 import Programmer from '../../assets/programmer.jpg';
 

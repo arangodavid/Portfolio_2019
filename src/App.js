@@ -1,8 +1,8 @@
 import React from 'react';
-import './App.css';
+import './scss/app.scss';
 import Root from './components/root/root-container';
 
-function App() {
+const App = () => {
   return (
 	<Root />
   );

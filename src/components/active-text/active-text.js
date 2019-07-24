@@ -1,5 +1,4 @@
 import React from 'react';
-import './active-text.css';
 
 class ActiveText extends React.Component {
 	constructor(props) {

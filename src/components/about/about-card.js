@@ -1,5 +1,4 @@
 import React from 'react';
-import './about-card.css';
 
 class AboutCard extends React.Component {
 	render() {
