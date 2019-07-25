@@ -26,7 +26,7 @@ class About extends React.Component {
 				>
 					A Software Engineer specializing in all things JavaScript, its Libraries, and Frameworks to create a faster, more dynamic and interactive user experience.
 					Fascinated by the power of creativity, I strive to create elegant and clean user interfaces. 
-					As I am always learning, and looking for ways to improve, I follow Jake Archibald, a Google Developer, who writes excellent blogs about best practices and new features. 
+					I am always learning, and looking for ways to improve.
 
 				</AboutCard>
 				<AboutCard 
@@ -41,7 +41,7 @@ class About extends React.Component {
 				title="My Interests" 
 				src={Programmer }
 				>
-					There are too may aspects of the web, and programming that excicte me, but the main ones have to do with React.js and Node.js. Most recently the 3D world has grabbed a hold of me, and I am in awe of Three.js/WebGl and its capabilities.
+					I am attracted to CSS animations and creating a visually rich UX/UI. Most recently the 3D world has grabbed a hold of me, and I am in awe of Three.js/WebGl and its capabilities.
 					I aim to interweave this new Library with my work to add life into my projects.
 				</AboutCard>
 			</section>

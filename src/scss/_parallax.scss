@@ -5,6 +5,11 @@
 	background-size: cover;
 }
 @media screen and (min-width: 750px) {
-	background: url("../assets/woods.jpg") no-repeat;
-	background-attachment: fixed;
+	.parallax {
+		background: url("../assets/woods.jpg") no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		min-height: 20rem;
+	}
 }
