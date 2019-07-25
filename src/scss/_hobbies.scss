@@ -1,0 +1,8 @@
+.hobbies{
+	@include flexBox(column, wrap, space-around, unset);
+}
+@media screen and (min-width: 750px) {
+	.hobbies {
+		@include flexBox(row, wrap, center, unset)
+	}
+}

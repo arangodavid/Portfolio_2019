@@ -1,19 +1,19 @@
 .rectangle_cont {
 	perspective: 40rem;
-	margin: 10% 0;
-}
-.rectangle {
-	transform-style: preserve-3d;
-	width: 10rem;
-	height: 22rem;
-	margin: 0 auto;
-	transform: rotateY(-15deg);
-	position: relative;
-	color: #ffffff;
-	transition: transform .3s linear;
-}
-.rectangle:hover {
-	transform: rotateY(-75deg);
+	margin: $margin-large * 2 0;
+	.rectangle {
+		transform-style: preserve-3d;
+		width: 10rem;
+		height: 22rem;
+		margin: 0 auto;
+		transform: rotateY(-15deg);
+		position: relative;
+		color: #ffffff;
+		transition: transform .3s linear;
+		&:hover, &:active {
+			transform: rotateY(-75deg);
+		}
+	}
 }
 .rectangle-isActive {
 	animation: rotate 6s ease-in-out 1s infinite alternate;
@@ -52,27 +52,26 @@
 }
 .rectangle_logo__cont {
 	border: .6rem double #ffffff;
-	margin: 10% auto;
+	margin: $margin-large auto;
 	height: 5rem;
 	width: 5rem;
 	align-items: center;
-}
-.rectangle_logo__cont, .rectangle_logo {
-	border-radius: 360%;
-}
-.rectangle_logo {
-	height: 35%;
+	border-radius: 50%;
+	.rectangle_logo {
+		border-radius: 50%;
+		height: 35%;
+	}
 }
 .rectangle_title {
-	width: 100%;
+	width: $width-full-parent;
 }
 .rectangle_title,
 .rectangle_desc {
 	text-shadow: .05rem .05rem 0 #000000;
 }
 .rectangle_desc {
-	padding: 0 1rem;
-	font-size: .8rem;
+	padding: 0 $padding-small;
+	font-size: $font-small - .2;
 }
 /*.rectangle:hover .front {
 	transform: translateZ(5rem);
@@ -95,14 +94,14 @@
 	height: 6rem;
 	position: relative;
 	overflow: hidden;
-}
-.rectangle_footer__img {
-	margin: 0;
-	height: 100%;
-	width: 1000%;
-	position: absolute;
-	bottom: 0;
-	animation: slide 120s linear infinite;
+	&__img {
+		margin: 0;
+		height: 100%;
+		width: 1000%;
+		position: absolute;
+		bottom: 0;
+		animation: slide 120s linear infinite;
+	}
 }
 @keyframes fadeIn {
 	from {

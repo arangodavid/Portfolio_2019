@@ -1,0 +1,5 @@
+.header_cont {
+	min-height: 30rem;
+	background: $light-blue;
+	@include flexBox(row, wrap, center, center);
+}
