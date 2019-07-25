@@ -1,10 +1,9 @@
 .rectangle_cont {
 	perspective: 40rem;
-	margin: $margin-large * 2 0;
+	height: 22rem;
 	.rectangle {
 		transform-style: preserve-3d;
 		width: 10rem;
-		height: 22rem;
 		margin: 0 auto;
 		transform: rotateY(-15deg);
 		position: relative;
@@ -22,9 +21,8 @@
 	position: absolute;
 	width: 10rem;
 	height: 20rem;
-	opacity: .5;
+	background: $light-blue;
 /*	transition: transform 1s ease-in-out;*/
-	animation: fadeIn 1s linear 1s forwards;
 }
 .front {
 	transform: translateZ(5rem);
@@ -44,34 +42,23 @@
 	background: #000000;
 	opacity: .5;
 }
-.front, .right, .rectangle_logo__cont {
-	display: flex;
-} 
 .front, .right {
-	flex-flow: row wrap;
-}
-.rectangle_logo__cont {
-	border: .6rem double #ffffff;
-	margin: $margin-large auto;
-	height: 5rem;
-	width: 5rem;
-	align-items: center;
+	@include flexBox(row, wrap, center, center);
+	padding: $padding-large * 2 0 0 0;
+} 
+.rectangle_logo {
+	border: .6rem solid #ffffff;
+	height: 6rem;
+	width: 6rem;
+	@include flexBox(row, wrap, center, center);
 	border-radius: 50%;
-	.rectangle_logo {
-		border-radius: 50%;
-		height: 35%;
-	}
-}
-.rectangle_title {
-	width: $width-full-parent;
-}
-.rectangle_title,
-.rectangle_desc {
-	text-shadow: .05rem .05rem 0 #000000;
+	font-size: $font-medium;
+	animation: pulse 1s linear infinite alternate;
 }
 .rectangle_desc {
-	padding: 0 $padding-small;
+	padding: 0 $padding-x-small;
 	font-size: $font-small - .2;
+	line-height: 1.3rem
 }
 /*.rectangle:hover .front {
 	transform: translateZ(5rem);
@@ -100,15 +87,10 @@
 		width: 1000%;
 		position: absolute;
 		bottom: 0;
+		background: url("../assets/mountains.jpg") repeat-x;
+		background-position: center;
+		background-size: contain;
 		animation: slide 120s linear infinite;
-	}
-}
-@keyframes fadeIn {
-	from {
-		opacity: .5;
-	}
-	to {
-		opacity: 1;
 	}
 }
 @keyframes rotate {
@@ -128,15 +110,35 @@
 		transform: translate(0%, 0);
 	}
 }
+@keyframes pulse {
+	0% {
+		box-shadow: inset .075rem .075rem .075rem .075rem $black,
+	.1rem .1rem .1rem .1rem $black,
+	.125rem .125rem .125rem .125rem $black;
+		text-shadow: .075rem .075rem .075rem $black,
+		.1rem .1rem .1rem $black,
+		.125rem .125rem .125rem $black;
+	}
+	100% {
+		box-shadow: inset .2rem .2rem .2rem .2rem $black,
+	.25rem .25rem .25rem .1rem $black,
+	.35rem .35rem .35rem .1rem $black;
+		text-shadow: .2rem .2rem .2rem $black,
+	.25rem .25rem .1rem $black,
+	.35rem .35rem .1rem $black;
+	}
+}
 @media screen and (min-width: 750px) {
 	.rectangle_cont {
 		width: calc(100% / 3);
 	}
 }
 @media screen and (min-width: 1150px) {
-	.rectangle {
-		transform: rotateY(-25deg);
+	.rectangle_cont{
 		height: 32rem;
+		.rectangle {
+			transform: rotateY(-25deg);
+		}
 	}
 	.face {
 		width: 15rem;

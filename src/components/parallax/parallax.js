@@ -13,7 +13,7 @@ class Parallax extends React.Component {
 
 	render() {
 		return (
-			<section style={this.backgroundImg} className="parallax"></section>
+			<section className="parallax"></section>
 		)
 	}
 }

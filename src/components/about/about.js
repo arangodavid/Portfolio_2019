@@ -10,20 +10,16 @@ class About extends React.Component {
 			envelope.style.animationDelay = Math.floor(Math.random() * 6) + "s";
 		}
 	}
-
 	checkViewport() {
 		let winSize = window.matchMedia('(max-width: 800px)');
 		if(winSize.matches) this.animate();
 	}
-
-
 	componentDidMount() {
 		this.checkViewport();
 	}
 	render() {
 		return (
 			<section className="about_cont">
-				<h1>ABOUT</h1>
 				<AboutCard 
 				title="Who Am I" 
 				src={Programmer }

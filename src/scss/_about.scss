@@ -1,8 +1,10 @@
 .about_cont {
 	perspective: 80rem;
+	padding: 0 0 $padding-large * 2 0;
 }
 @media screen and (min-width: 750px) {
 	.about_cont {
 		@include flexBox(row, wrap, center, unset);
+		padding: 0 0 $padding-large * 4 0;
 	}
 }

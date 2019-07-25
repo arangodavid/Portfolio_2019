@@ -1,5 +1,15 @@
 .header_cont {
-	min-height: 30rem;
+	min-height: 45rem;
 	background: $light-blue;
 	@include flexBox(row, wrap, center, center);
+}
+@media screen and (min-width: 750px) {
+	.header_cont {
+		min-height: 60rem;
+	}
+}
+@media screen and (min-width: 1150px) {
+	.header_cont {
+		min-height: 60rem;
+	}
 }

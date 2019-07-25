@@ -5,18 +5,17 @@ import About from '../about/about';
 import Hobbies from '../hobbies/hobbies';
 import Footer from '../footer/footer';
 import Parallax from '../parallax/parallax';
-import Woods from '../../assets/woods.jpg';
 
 class Root extends React.Component {
 	render() {
 		return (
 			<section className="root">
 				<Header />
-				<Parallax src={Woods}/>
+				<Parallax />
 				<About />
-				<Parallax src={Woods}/>
+				<Parallax />
 				<Hobbies />
-				<Parallax src={Woods}/>
+				<Parallax />
 				<Footer />
 			</section>
 		)
