@@ -1,6 +1,5 @@
 .nav_cont {
 	width: $width-full-parent;
-	color: $black;
 	position: absolute;
 	top: 0;
 	padding: $padding-small 0 0 0;
@@ -69,19 +68,57 @@
 .technology {
 	transform: translate(100%, 0);
 }
-.isVisible {
+.isVisibleMob {
 	transform: translate(0, 0);
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {	
+	%circle {
+		width: 6rem;
+		height: 6rem;
+		border-radius: 50%;
+	}
 	.nav_mobile_toggle {
 		display: none;
 	}
 	.nav_cont {
-		border: 1px solid white;
-		padding: 0;
+		padding: $padding-small 0;
 	}
 	.nav_cont__inner {
 		border: 1px solid black;
+		margin: 0 auto;
+		position: relative;
+		@extend %circle;
+		@include flexBox(row, nowrap, center, center);
+		overflow: visible;
+		.nav_item {
+			transform: translate(0, 0);
+			@extend %circle;
+			position: absolute;
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			background: red;
+			@extend %circle;
+			background: #000000 url("../assets/desk-menu-icon.svg") no-repeat;
+			background-position: center;
+			background-size: 60%;
+		}
 	}
+	// .isVisibleDesk {
+
+	// }
+
+	.nav_cont__inner.isVisibleDesk .home {
+		transform: translate(-150%, 100%);
+	}
+	.nav_cont__inner.isVisibleDesk .about {
+		transform: translate(0, 150%);
+	}
+	.nav_cont__inner.isVisibleDesk .technology {
+		transform: translate(150%, 100%);
+	}
+
 }
 
