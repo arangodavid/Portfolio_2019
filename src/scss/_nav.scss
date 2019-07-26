@@ -59,11 +59,7 @@
 		transition: all .3s ease-in-out;
 	}
 }
-.home,
-.about,
-.technology {
-	visibility: hidden;
-}
+
 .home {
 	transform: translate(100%, 0);
 }
@@ -75,7 +71,6 @@
 }
 .isVisibleMob {
 	transform: translate(0, 0);
-	visibility: visible;
 }
 @media screen and (min-width: 750px) {	
 	%circle {
@@ -94,9 +89,9 @@
 		position: relative;
 		@extend %circle;
 		@include flexBox(row, nowrap, center, center);
-		overflow: hidden;
+		overflow: visible;
 		.nav_item {
-			transform: unset;
+			transform: translate(0, 0);
 			@extend %circle;
 			position: absolute;
 			background: #ffffff;
@@ -107,7 +102,6 @@
 			content: '';
 			display: block;
 			position: absolute;
-			background: red;
 			@extend %circle;
 			background: #ffffff url("../assets/desk-menu-icon.svg") no-repeat;
 			background-position: center;

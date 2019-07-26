@@ -1,6 +1,6 @@
 .header_cont {
 	min-height: 45rem;
-	background: linear-gradient(to right, $emerald-green, $light-blue);
+	background: $light-blue;
 	@include flexBox(row, wrap, center, center);
 	position: relative;
 }

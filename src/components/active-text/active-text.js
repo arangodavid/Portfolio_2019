@@ -21,7 +21,6 @@ class ActiveText extends React.Component {
 			this.setState({phrase: updatedPhrase});
 
 			if(this.state.phrase.length === 0) {
-				console.log('Phrase Removed');
 				setTimeout(() => {
 					this.nextPhrase();
 				}, 2000);
@@ -30,7 +29,6 @@ class ActiveText extends React.Component {
 	}
 	checkPhrase(phrase) {
 		if(phrase.length === this.state.phrase.length) {
-			console.log('Phrase Added');
 			setTimeout(() => {
 				for(let i = 0; i < phrase.length; i++) {
 					this.removePhrase(phrase, i);
