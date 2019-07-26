@@ -56,8 +56,13 @@
 		color: $white;
 		@include flexBox(row, wrap, center, center);
 		background: $black;
-		transition: transform .3s ease-in-out;
+		transition: all .3s ease-in-out;
 	}
+}
+.home,
+.about,
+.technology {
+	visibility: hidden;
 }
 .home {
 	transform: translate(100%, 0);
@@ -70,6 +75,7 @@
 }
 .isVisibleMob {
 	transform: translate(0, 0);
+	visibility: visible;
 }
 @media screen and (min-width: 750px) {	
 	%circle {
@@ -84,16 +90,18 @@
 		padding: $padding-small 0;
 	}
 	.nav_cont__inner {
-		border: 1px solid black;
 		margin: 0 auto;
 		position: relative;
 		@extend %circle;
 		@include flexBox(row, nowrap, center, center);
-		overflow: visible;
+		overflow: hidden;
 		.nav_item {
-			transform: translate(0, 0);
+			transform: unset;
 			@extend %circle;
 			position: absolute;
+			background: #ffffff;
+			color: $emerald-green;
+			box-shadow: .25rem .25rem .25rem $black;
 		}
 		&:after {
 			content: '';
@@ -101,15 +109,12 @@
 			position: absolute;
 			background: red;
 			@extend %circle;
-			background: #000000 url("../assets/desk-menu-icon.svg") no-repeat;
+			background: #ffffff url("../assets/desk-menu-icon.svg") no-repeat;
 			background-position: center;
 			background-size: 60%;
+			box-shadow: .25rem .25rem .25rem $black;
 		}
 	}
-	// .isVisibleDesk {
-
-	// }
-
 	.nav_cont__inner.isVisibleDesk .home {
 		transform: translate(-150%, 100%);
 	}
@@ -118,6 +123,9 @@
 	}
 	.nav_cont__inner.isVisibleDesk .technology {
 		transform: translate(150%, 100%);
+	}
+	.nav_item:hover {
+		box-shadow: .5rem .5rem .5rem $black;
 	}
 
 }

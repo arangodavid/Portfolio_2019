@@ -1,0 +1,34 @@
+.footer {
+	background: linear-gradient(to right, $emerald-green, $light-blue);
+	min-height: 15rem;
+	color: $white;
+	padding: $padding-large 0;
+	@include flexBox(column, nowrap, space-between, unset);
+}
+.social_icon_cont {
+	margin: 0;
+	padding: 0;
+	@include flexBox(row, nowrap, space-around, unset);
+	.social_icon {
+	list-style-type: none;
+	width: 4rem;
+	height: 4rem;
+		.social_icon_link {
+			display: block;
+		}
+	}
+}
+.footer_notes_p {
+	margin: 0;
+}
+@media screen and (min-width: 750px) {
+	.social_icon {
+		width: 6rem;
+		height: 6rem;
+	}
+}
+@media screen and (min-width: 750px) {
+	.footer {
+		padding: $padding-x-large 0;
+	}
+}
