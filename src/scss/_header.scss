@@ -1,7 +1,8 @@
 .header_cont {
 	min-height: 45rem;
-	background: $light-blue;
+	background: linear-gradient(to right, $emerald-green, $light-blue);
 	@include flexBox(row, wrap, center, center);
+	position: relative;
 }
 @media screen and (min-width: 750px) {
 	.header_cont {

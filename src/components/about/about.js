@@ -5,9 +5,9 @@ import Programmer from '../../assets/programmer.jpg';
 class About extends React.Component {
 	animate() {
 		let envelopes = document.querySelectorAll('.about_card__img');
-		for(let envelope of envelopes) {
+		for(let [i, envelope] of envelopes.entries()) {
 			envelope.className += " envelope-isActive";
-			envelope.style.animationDelay = Math.floor(Math.random() * 6) + "s";
+			envelope.style.animationDelay = i * 3 + "s";
 		}
 	}
 	checkViewport() {

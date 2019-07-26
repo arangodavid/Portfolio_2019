@@ -7,9 +7,9 @@ import Car from '../../assets/car.svg';
 class Hobbies extends React.Component {
 	animate() {
 		let rectangles = document.querySelectorAll('.rectangle');
-		for(let rect of rectangles) {
+		for(let [i, rect] of rectangles.entries()) {
 			rect.className += " rectangle-isActive";
-			rect.style.animationDelay = Math.floor(Math.random() * 6) + "s";
+			rect.style.animationDelay = i * 3 + "s";
 		}
 		
 	}

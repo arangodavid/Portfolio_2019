@@ -53,7 +53,7 @@
 	@include flexBox(row, wrap, center, center);
 	border-radius: 50%;
 	font-size: $font-medium;
-	animation: pulse 1s linear infinite alternate;
+	animation: pulse .8s linear infinite alternate;
 }
 .rectangle_desc {
 	padding: 0 $padding-x-small;
@@ -112,6 +112,7 @@
 }
 @keyframes pulse {
 	0% {
+		transform: scale(1);
 		box-shadow: inset .075rem .075rem .075rem .075rem $black,
 	.1rem .1rem .1rem .1rem $black,
 	.125rem .125rem .125rem .125rem $black;
@@ -120,7 +121,8 @@
 		.125rem .125rem .125rem $black;
 	}
 	100% {
-		box-shadow: inset .2rem .2rem .2rem .2rem $black,
+		transform: scale(1.05);
+		box-shadow: inset .3rem .3rem .3rem .25rem $black,
 	.25rem .25rem .25rem .1rem $black,
 	.35rem .35rem .35rem .1rem $black;
 		text-shadow: .2rem .2rem .2rem $black,
