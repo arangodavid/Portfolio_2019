@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../nav/nav-bar';
+import Nav from '../nav/nav';
 import ActiveText from '../active-text/active-text';
 
 const Header = () => {

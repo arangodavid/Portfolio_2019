@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hobby = props => {
+const TechnologyBlock = props => {
 	return (
 		<section className="rectangle_cont">
 			<section className="rectangle">
@@ -25,4 +25,4 @@ const Hobby = props => {
 		</section>
 	);
 }
-export default Hobby;
+export default TechnologyBlock;

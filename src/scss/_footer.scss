@@ -11,12 +11,18 @@
 	@include flexBox(row, nowrap, space-around, unset);
 	.social_icon {
 	list-style-type: none;
-	width: 4rem;
-	height: 4rem;
-		.social_icon_link {
+		&_link {
 			display: block;
 		}
+		&_img {
+			width: 4rem;
+			height: 4rem;
+			fill: $white;
+		}
 	}
+}
+.social_icon_img:hover {
+	fill: red;
 }
 .footer_notes_p {
 	margin: 0;

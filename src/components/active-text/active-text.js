@@ -1,4 +1,5 @@
 import React from 'react';
+import ActiveTextPresentational from './active-text-presentational';
 
 class ActiveText extends React.Component {
 	constructor(props) {
@@ -54,17 +55,12 @@ class ActiveText extends React.Component {
 
 	render() {
 		return (
-			<section className="active_text">
-					<section className="active_text__welcome">{this.props.children[0]}</section>
-					<section className="active_text__name">{this.props.children[1]}</section>
-					<section className="active_text__phrases__cont">
-						<span className="active_text__pre_phrases">I am a </span>
-						<span className="active_text__phrases">{this.state.phrase}
-							<span className="active_text__indicator">|</span>
-						</span>
-					</section>
-			</section>
-		)
+			<ActiveTextPresentational 
+			welcomeText={this.props.children[0]} 
+			nameText={this.props.children[1]} 
+			currentPhrase={this.state.phrase}
+			/>
+		);
 	}
 }
 
