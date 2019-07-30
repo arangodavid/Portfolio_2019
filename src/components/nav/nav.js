@@ -4,6 +4,7 @@ import NavBar from './nav-bar';
 class Nav extends React.Component {
 	constructor(props) {
 		super(props);
+		this.categories = ["Home", "About", "Technology"];
 		this.handleClickMob = this.handleClickMob.bind(this);
 		this.handleClickDesk = this.handleClickDesk.bind(this);
 	}
@@ -15,7 +16,7 @@ class Nav extends React.Component {
  			navItem.className === `nav_item ${navItem.innerHTML.toLowerCase()}` ? navItem.className += " isVisibleMob" : navItem.className = `nav_item ${navItem.innerHTML.toLowerCase()}`;
 		}
 	}
-
+	
 	checkClick(target) {
 		let deskBttn =document.querySelector(".nav_cont__inner");
 		if(target.tagName.toLowerCase() === 'ul') {
@@ -32,6 +33,7 @@ class Nav extends React.Component {
 	render() {
 		return (
 			<NavBar 
+			categories={this.categories} 
 			handleClickDesk={this.handleClickDesk} 
 			handleClickMob={this.handleClickMob}
 			/>

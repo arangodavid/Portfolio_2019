@@ -3,7 +3,7 @@ import TechnologyBlock from './technology-block';
 
 const TechnologyBlocks = props => {
 	return(
-		<section className="technology-blocks">
+		<section className="technology_blocks">
 			<TechnologyBlock 
 			title={props.titles.titleOne}
 			>
