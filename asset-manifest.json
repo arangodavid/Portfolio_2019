@@ -1,23 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio_2019/static/css/main.1b4b4b6b.chunk.css",
-    "main.js": "/Portfolio_2019/static/js/main.8a3e59af.chunk.js",
-    "main.js.map": "/Portfolio_2019/static/js/main.8a3e59af.chunk.js.map",
+    "main.css": "/Portfolio_2019/static/css/main.3f0df88a.chunk.css",
+    "main.js": "/Portfolio_2019/static/js/main.bca0be30.chunk.js",
+    "main.js.map": "/Portfolio_2019/static/js/main.bca0be30.chunk.js.map",
     "runtime~main.js": "/Portfolio_2019/static/js/runtime~main.7afb1bb9.js",
     "runtime~main.js.map": "/Portfolio_2019/static/js/runtime~main.7afb1bb9.js.map",
-    "static/js/2.0e2ec0a2.chunk.js": "/Portfolio_2019/static/js/2.0e2ec0a2.chunk.js",
-    "static/js/2.0e2ec0a2.chunk.js.map": "/Portfolio_2019/static/js/2.0e2ec0a2.chunk.js.map",
+    "static/js/2.ff156f11.chunk.js": "/Portfolio_2019/static/js/2.ff156f11.chunk.js",
+    "static/js/2.ff156f11.chunk.js.map": "/Portfolio_2019/static/js/2.ff156f11.chunk.js.map",
     "index.html": "/Portfolio_2019/index.html",
-    "precache-manifest.721f2b03145f89339267b09d12c78909.js": "/Portfolio_2019/precache-manifest.721f2b03145f89339267b09d12c78909.js",
+    "precache-manifest.81d441b511d3fe61a32b903a104eb153.js": "/Portfolio_2019/precache-manifest.81d441b511d3fe61a32b903a104eb153.js",
     "service-worker.js": "/Portfolio_2019/service-worker.js",
-    "static/css/main.1b4b4b6b.chunk.css.map": "/Portfolio_2019/static/css/main.1b4b4b6b.chunk.css.map",
-    "static/media/car.svg": "/Portfolio_2019/static/media/car.c39b38ff.svg",
-    "static/media/codepen.svg": "/Portfolio_2019/static/media/codepen.e08179d0.svg",
+    "static/css/main.3f0df88a.chunk.css.map": "/Portfolio_2019/static/css/main.3f0df88a.chunk.css.map",
     "static/media/app.scss": "/Portfolio_2019/static/media/woods.3001be5b.jpg",
-    "static/media/github.svg": "/Portfolio_2019/static/media/github.9ab214aa.svg",
-    "static/media/linkedin.svg": "/Portfolio_2019/static/media/linkedin.4c7b2985.svg",
-    "static/media/programmer.jpg": "/Portfolio_2019/static/media/programmer.8c181c2b.jpg",
-    "static/media/snowboarding-three.svg": "/Portfolio_2019/static/media/snowboarding-three.d609bb10.svg",
-    "static/media/tree.svg": "/Portfolio_2019/static/media/tree.a8341aad.svg"
+    "static/media/programmer.jpg": "/Portfolio_2019/static/media/programmer.8c181c2b.jpg"
   }
 }
