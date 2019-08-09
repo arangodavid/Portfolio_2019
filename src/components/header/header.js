@@ -1,15 +1,10 @@
 import React from 'react';
-import Nav from '../nav/nav';
-import ActiveText from '../active-text/active-text';
-
+// import Nav from '../nav/nav';
+import Room from '../room/room';
 const Header = () => {
 	return (
 		<header className="header_cont">
-			<Nav />
-			<ActiveText phrases={["Programmer", "Thinker", "Problem Solver"]}>
-				<p>Welcome, my name is</p>
-				<h1>David Arango</h1>
-			</ActiveText>
+			<Room />
 		</header>
 	);
 }

@@ -1,0 +1,39 @@
+.clipped_text {
+	font-size: 4rem;
+	background: url("../assets/woods.jpg") center / contain;
+	background-size: 200%;
+	animation: repeat 60s linear infinite alternate;
+	background-clip: text;
+	color: transparent;
+	text-transform: uppercase;
+	position: relative;
+	align-self: flex-start;
+	margin: 0;
+	&:after {
+		content: attr(data-name);
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: transparent;
+		text-shadow: 1px 0 1px black, 
+		1px 1px 1px black,
+		1px 2px 1px black,
+		2px 2px 1px black, 
+		1px 0 1px #2ecc71, 
+		2px 2px 2px #2ecc71,
+		1px 2px 2px #2ecc71,
+		2px 2px 2px #2ecc71;
+		background-clip: text;
+		z-index: -1;
+		width: 100%;
+	}
+}
+
+@keyframes repeat {
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: -200%;
+	}
+}

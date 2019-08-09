@@ -1,0 +1,64 @@
+.room_cont {
+	width: 100%;
+	perspective: 6rem;
+	min-height: 45rem;
+	background: #bdc3c7;
+	.room {
+		position: relative;
+		transform-style: preserve-3d;
+		width: 100%;
+		min-height: 45rem;
+	}
+}
+.room_wall {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.wall_back {
+	transform: translateZ(-5rem);
+	// animation: installWall .3s linear;
+	background: #bdc3c7;
+	@include flexBox(row, wrap, center, center);
+	border-left: 3px solid #7f8c8d;
+	border-right: 3px solid #7f8c8d;
+}
+.wall_top {
+	height: 10rem;
+	transform: rotateX(90deg) translateZ(5rem);
+	// animation: installCeiling .6s linear;
+	background: #ecf0f1;
+	border: 3px solid #7f8c8d;
+}
+.wall_bottom {
+	height: 10rem;
+	transform: rotateX(90deg) translateZ(-35rem);
+	// animation: installFloor .6s linear;
+	background: url("../assets/floor-two.jpg") center / cover;
+	border-top: unset;
+}
+
+// @keyframes installCeiling {
+// 	0% {
+// 		transform: rotateX(90deg) translateZ(30rem);
+// 	}
+// 	100% {
+// 		transform: rotateX(90deg) translateZ(5rem);
+// 	}
+// }
+// @keyframes installFloor {
+// 	0% {
+// 		transform: rotateX(90deg) translateZ(-60rem);
+// 	}
+// 	100% {
+// 		transform: rotateX(90deg) translateZ(-35rem);
+// 	}
+// }
+// @keyframes installWall {
+// 	0% {
+// 		transform: translateZ(5rem);
+// 	}
+// 	100% {
+// 		transform: translateZ(-5rem);
+// 	}
+// }

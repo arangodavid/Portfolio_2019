@@ -1,0 +1,45 @@
+.ring_cont {
+	min-width: 16rem;
+	margin: 0 auto;
+	position: relative;
+	animation: rise 3s linear infinite alternate;
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 2rem;
+		z-index: -1;
+		background: #18dcff;
+	}
+	.ring_inner {
+		border: .5rem solid #fffa65;
+		background: #fffa65;
+		border-radius: 50%;
+		height: 4rem;
+		z-index: 1;
+		box-shadow: inset 5px 5px 5px black;
+	}
+	.ring_face {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: -2;
+		background: #fff200;
+		border-radius: 0 0 2rem 2rem;
+		height: 20rem;
+	}
+}
+@keyframes rise {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(0, -200%);
+	}
+}
+
+	
+

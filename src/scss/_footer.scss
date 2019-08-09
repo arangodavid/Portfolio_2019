@@ -1,7 +1,7 @@
 .footer {
-	background: $light-blue;
+	background: #fffa65;;
 	min-height: 15rem;
-	color: $white;
+	color: $black;
 	padding: $padding-large 0;
 	@include flexBox(column, nowrap, space-between, unset);
 }
@@ -17,7 +17,7 @@
 		&_img {
 			width: 4rem;
 			height: 4rem;
-			fill: $white;
+			fill: $black;
 		}
 	}
 }

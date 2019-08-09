@@ -1,8 +1,8 @@
 .header_cont {
 	min-height: 45rem;
-	background: $light-blue;
-	@include flexBox(row, wrap, center, center);
 	position: relative;
+	overflow: hidden;
+	background: #bdc3c7;
 }
 @media screen and (min-width: 750px) {
 	.header_cont {

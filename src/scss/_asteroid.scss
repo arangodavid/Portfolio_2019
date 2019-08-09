@@ -1,0 +1,60 @@
+.asteroid_cont {
+	position: absolute;
+	border: 2px solid red;
+	top: 0;
+	width: 100%;
+	height: 5rem;
+	transform: translate(0, 0) scale(1);
+	text-align: center;
+	background: transparent;
+	.asteroid {
+		margin: 0;
+		@include flexBox(column, nowrap, unset, flex-end);
+		&_img {
+			height: 1rem;
+			width: 3rem;
+			transform: translate(0, 0) rotate(45deg);
+			animation: shower 15s linear infinite;
+		}
+	}
+}
+
+.asteroid {
+	.asteroid_first {
+		animation-delay:  2s;
+	}
+}
+
+.asteroid {
+	.asteroid_second {
+		animation-delay: 4s;
+	}
+}
+
+.asteroid {
+	.asteroid_third {
+		animation-delay: 6s;
+	}
+}
+
+.asteroid {
+	.asteroid_fourth {
+		animation-delay: 8s;
+	}
+}
+
+.asteroid {
+	.asteroid_fith {
+		animation-delay: 10s;
+	}
+}
+
+
+@keyframes shower {
+	0% {
+		transform: translate(0, 0) rotate(45deg) scale(random(2) * 1.25);
+	}
+	100% {
+		transform: translate(-8000%, 0) rotate(45deg) scale(.5);
+	}
+}

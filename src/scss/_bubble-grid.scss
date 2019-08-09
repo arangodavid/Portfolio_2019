@@ -1,0 +1,109 @@
+.bubble_cont {
+	border: 1px solid black;
+	min-height: 40rem;
+	position: relative;
+	background: #000000;
+	filter: blur(.6rem) contrast(20);
+	overflow: hidden;
+	@include flexBox(row, wrap, space-around, center);
+}
+.bubble_row {
+	border: 1px solid black;
+	@include flexBox(row, nowrap, space-around, center);
+	padding: .5rem 0;
+	width: 100%;
+	&_desk {
+		display: none;
+	}
+	.bubble {
+		border: 1px solid black;
+		height: 3rem;
+		width: 3rem;
+		border-radius: 50%;
+		background: yellow;
+		box-shadow: inset 5px 0 0 red;
+		// animation: grow 3s linear alternate infinite;
+	}
+}
+.bubble_row_init {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform: translate(0, -150%);
+	width: calc(100% / 4);
+	animation: drip 8s linear alternate infinite;
+}
+.bubble_row_init_first {
+	animation-delay: 0s;
+}
+.bubble_row_init_second {
+	left: 25%;
+	animation-delay: 2s;
+}
+.bubble_row_init_third {
+	left: 50%;
+	animation-delay: 4s;
+}
+.bubble_row_init_fourth {
+	left: 75%;
+	animation-delay: 6s;
+}
+
+@keyframes drip {
+	0% {
+		transform: translate(0, -150%);
+	}
+	100% {
+		transform: translate(0, 1200%);
+	}
+}
+// @keyframes grow {
+// 	0% {
+// 		transform: scale(1);
+// 		opacity: 0;
+// 	}
+// 	50% {
+// 		transform: scale(1.2);
+// 		opacity: 1;
+// 	}
+// 	100% {
+// 		transform: scale(1.1);
+// 		opacity: 1;
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
